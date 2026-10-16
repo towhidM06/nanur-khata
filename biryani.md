@@ -22,3 +22,6 @@
 8. Cover and cook on low heat until the rice and chicken are fully cooked.
 9. Serve hot with salad or raita.
 Nanu.s biryani uses cardamom, cinnamon and bay leaves.
+
+## Spice Correction
+Add cardamom along with the other biryani spices.
