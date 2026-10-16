@@ -38,3 +38,19 @@ git fetch downloads remote changes and updates remote-tracking branches without 
 git pull fetches remote changes and integrates them into the current branch. Depending on the Git configuration, the integration may use a merge or rebase.
 
 Using fetch and merge helped me understand each operation separately, while pull provided a convenient way to update the repository.
+
+## Chapter 5: Half-Cooked Halua and Time Travel
+
+I started writing the halua recipe and used git stash to save my unfinished work. I then corrected the biryani recipe by adding cardamom and committed the change. After that, I restored the halua work using git stash pop and completed the recipe.
+
+I organized the recipes into a folder using git mv and removed an outdated recipe using git rm. I inspected the history using git log --stat -M and examined a particular commit using git show.
+
+Finally, I created a separate reset-test branch, made two test commits and used git reset --hard to return to an older commit. I checked the history and saw that the test changes were no longer present on that branch.
+
+### Why Rebase and Reset --hard Are Dangerous on Shared Branches
+
+Rebase rewrites commit history by replaying commits with new commit IDs. This can confuse collaborators who are already using the original commits.
+
+git reset --hard moves the current branch to an earlier commit and resets the staging area and working directory. Uncommitted changes can be lost, and commits removed from the branch may disappear from normal history.
+
+These commands can disrupt shared work when other people depend on the existing history. I used a separate test branch for the reset demonstration and kept main intact.
