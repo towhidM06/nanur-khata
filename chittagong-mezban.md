@@ -19,3 +19,6 @@
 5. Cook until the meat begins to soften.
 6. Add water and simmer until the beef is tender.
 7. Adjust the seasoning and serve with rice.
+
+## Serving Note
+Mezban beef is traditionally served with rice and is prepared for family gatherings.
