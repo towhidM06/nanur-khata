@@ -14,3 +14,11 @@ After correcting the recipe, I committed it with a meaningful message. I also cr
 I created a private spice file, several temporary files and a draft folder. I did not want these files to become part of the repository. I added rules to .gitignore for the secret file, all .tmp files and the draft folder.
 
 I used git status --short to check the repository and git check-ignore -v to confirm that the ignore rules applied. Finally, I committed only .gitignore. The secret spice blend remained on my computer and was not committed.
+
+## Chapter 3: The Eid Special
+
+I created the eid-special branch to work on the Eid recipes separately. I added biryani.md and shemai.md in two separate commits. When I returned to main, these files were not present until I merged eid-special.
+
+For the challenge, I changed the same biryani line differently on main and spice-experiment. Git could not automatically decide which version to keep, so it reported a merge conflict. I inspected the conflict markers, edited the file to create one final recipe, staged the resolved file and committed the merge resolution.
+
+This exercise showed me that branches let me work independently, while merging combines changes. Conflicts need a decision when different branches modify the same part of a file.
