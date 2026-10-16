@@ -21,4 +21,4 @@
 7. Add fried onions and a little ghee.
 8. Cover and cook on low heat until the rice and chicken are fully cooked.
 9. Serve hot with salad or raita.
-Nanu's biryani uses cardamom and cinnamon.
+The experimental biryani uses extra cloves.
