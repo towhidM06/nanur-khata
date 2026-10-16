@@ -1,0 +1,8 @@
+# Secret family information
+secret-masala.txt
+
+# Temporary files
+*.tmp
+
+# Draft folder
+draft/
