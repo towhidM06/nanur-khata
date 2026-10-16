@@ -22,3 +22,19 @@ I created the eid-special branch to work on the Eid recipes separately. I added 
 For the challenge, I changed the same biryani line differently on main and spice-experiment. Git could not automatically decide which version to keep, so it reported a merge conflict. I inspected the conflict markers, edited the file to create one final recipe, staged the resolved file and committed the merge resolution.
 
 This exercise showed me that branches let me work independently, while merging combines changes. Conflicts need a decision when different branches modify the same part of a file.
+
+## Chapter 4: Mitu Joins In
+
+I created a GitHub repository and connected my local repository using git remote add origin. I pushed my work to GitHub and cloned the repository into a second folder to act as Mitu.
+
+Mitu added chittagong-mezban.md, committed the recipe and pushed it to the remote repository. I returned to my original folder and used git fetch origin to download the latest remote information. I then merged origin/main to integrate the changes.
+
+When Mitu pushed another update, I used git pull origin main to update my local repository.
+
+### Fetch + Merge vs Pull
+
+git fetch downloads remote changes and updates remote-tracking branches without automatically integrating them into my current branch. I can inspect the changes and merge them separately.
+
+git pull fetches remote changes and integrates them into the current branch. Depending on the Git configuration, the integration may use a merge or rebase.
+
+Using fetch and merge helped me understand each operation separately, while pull provided a convenient way to update the repository.
